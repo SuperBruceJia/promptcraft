@@ -33,7 +33,7 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     keywords='Prompt Perturbation',
-    packages=find_packages(exclude=['styleformer', 'sentence', 'parrot', 'character', 'word']),
+    packages=find_packages(),
     install_requires=['torch',
                       'bitsandbytes',
                       'transformers',
