@@ -43,7 +43,7 @@ setup(
                       'Levenshtein',
                       'scipy',
                       'sklearn_pandas',
-                      'sklearn',
+                      'scikit-learn',
                       'sentence_transformers',
                       'googletrans==3.1.0a0',
                       'nltk',
