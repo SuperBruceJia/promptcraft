@@ -32,7 +32,6 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-            print('formal: ', sentence)
         except:
             print("Error in formal")
             return None
@@ -49,7 +48,6 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-            print('casual: ', sentence)
         except:
             print("Error in casual")
             return None
@@ -66,7 +64,6 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-            print('passive: ', sentence)
         except:
             print("Error in passive")
             return None
@@ -83,7 +80,6 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-            print('active: ', sentence)
         except:
             print("Error in active")
             return None
