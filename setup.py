@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 here = path.abspath(path.dirname(__file__))
 
 # Get the version string
-with open(path.join(here, '__init__.py'), encoding='utf-8') as f:
+with open(path.join(here, 'promptcraft/__init__.py'), encoding='utf-8') as f:
     version = re.search(r'__version__ = \'(.*?)\'', f.read()).group(1)
 
 # Get the long description from the README file

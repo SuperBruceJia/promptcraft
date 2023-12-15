@@ -39,11 +39,12 @@ pip install promptcraft
 
 # Character Editing
 ```python
-from promptcraft import CharacterPerturb
+from promptcraft import character
 
 sentence = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
 level = 0.25  # Number of characters that will be edited
-character_tool = CharacterPerturb(sentence=sentence, level=level)
+
+character_tool = character.CharacterPerturb(sentence=sentence, level=level)
 ```
 ## Character Replacement
 ```python
@@ -71,11 +72,11 @@ char_ocr = character_tool.optical_character_recognition()
 ```
 # Word Manipulation
 ```python
-from promptcraft import WordPerturb
+from promptcraft import word
 
 sentence = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
 level = 0.25  # Number of words that will be manipulated
-word_tool = WordPerturb(sentence=sentence, level=level)
+word_tool = word.WordPerturb(sentence=sentence, level=level)
 ```
 ## Synonym Replacement
 ```python
@@ -104,10 +105,10 @@ word_split = word_tool.word_split()
 
 # Sentence Paraphrasing
 ```python
-from promptcraft import SentencePerturb
+from promptcraft import sentence
 
 sentence = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
-sentence_tool = SentencePerturb(sentence=sentence)
+sentence_tool = sentence.SentencePerturb(sentence=sentence)
 ```
 ## Back Translation by Hugging Face
 ```python
