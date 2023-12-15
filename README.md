@@ -145,13 +145,14 @@ At the root of the project, you will see:
 .
 ├── LICENSE
 ├── README.md
-├── __init__.py
-├── character.py
-├── parrot.py
-├── sentence.py
-├── setup.py
-├── styleformer.py
-└── word.py
+├── promptcraft
+│   ├── __init__.py
+│   ├── character.py
+│   ├── parrot.py
+│   ├── sentence.py
+│   ├── styleformer.py
+│   └── word.py
+└── setup.py
 ```
 
 # Acknowledgement
