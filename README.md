@@ -29,6 +29,7 @@ A Prompt Perturbation Toolkit for Prompt Robustness Analysis
   - [Casual Style](#Casual-Style)
   - [Passive Style](#Passive-Style)
   - [Active Style](#Active-Style)
+- [Parallel Processing](#Parallel-Processing)
 - [Structure of the code](#Structure-of-the-code)
 - [Acknowledgement](#Acknowledgement)
 
@@ -138,6 +139,10 @@ sen_passive = sentence_tool.passive()
 ```python
 sen_active = sentence_tool.active()
 ```
+
+# Parallel Processing
+Since all the methods are executed on the CPU, 
+they can be performed in parallel using the `multiprocessing` package.
 
 # Structure of the code
 At the root of the project, you will see:
