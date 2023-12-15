@@ -34,7 +34,7 @@ stop_words = ['i', 'me', 'my', 'myself', 'we', 'our',
               'few', 'more', 'most', 'other', 'some', 'such', 'no',
               'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too',
               'very', 's', 't', 'can', 'will', 'just', 'don',
-              'should', 'now', '']
+              'should', 'now']
 
 
 def get_synonyms(word):
@@ -112,22 +112,26 @@ class WordPerturb:
         else:
             positions = random.sample(positions, self.num)
 
-        # Replace chosen words with random synonyms
-        for index in positions:
-            word_ori = self.words[index]
-            synonyms = get_synonyms(word_ori)
+        # Return the original sentence if all the words don't have synonyms
+        if len(positions) == 0:
+            return ''.join(sen_list)
+        else:
+            # Replace chosen words with random synonyms
+            for index in positions:
+                word_ori = self.words[index]
+                synonyms = get_synonyms(word_ori)
 
-            # Randomly retrieve one synonym from all the synonyms
-            synonym = random.choice(synonyms)
-            if '_' in synonym:
-                synonym = synonym.replace('_', ' ')
+                # Randomly retrieve one synonym from all the synonyms
+                synonym = random.choice(synonyms)
+                if '_' in synonym:
+                    synonym = synonym.replace('_', ' ')
 
-            sen_list[index] = synonym
+                sen_list[index] = synonym
 
-        # Join the modified words back into a string
-        sen_list = ''.join(sen_list)
+            # Join the modified words back into a string
+            sen_list = ''.join(sen_list)
 
-        return sen_list
+            return sen_list
 
     def word_insertion(self):
         """
@@ -152,37 +156,41 @@ class WordPerturb:
         while -1 in positions:
             positions.remove(-1)
 
-        # Randomly sample `self.num` positions
-        if self.num >= len(positions):
-            pass
+        # Return the original sentence if all the words don't have synonyms
+        if len(positions) == 0:
+            return ''.join(sen_list)
         else:
-            positions = random.sample(positions, self.num)
+            # Randomly sample `self.num` positions
+            if self.num >= len(positions):
+                pass
+            else:
+                positions = random.sample(positions, self.num)
 
-        # Initialize an empty list to store the modified sentence.
-        sen_init = []
-        positions_insert = random.sample(non_sw_posi, self.num)
-        for index, word in enumerate(sen_list):
-            # Check if the current word's index is in the list of chosen indices.
-            if index in positions_insert:
-                # Insert a random character in front of the chosen character.
-                random_index = random.sample(positions, 1)
-                word_ori = self.words[random_index[0]]
-                synonyms = get_synonyms(word_ori)
+            # Initialize an empty list to store the modified sentence.
+            sen_init = []
+            positions_insert = random.sample(non_sw_posi, self.num)
+            for index, word in enumerate(sen_list):
+                # Check if the current word's index is in the list of chosen indices.
+                if index in positions_insert:
+                    # Insert a random character in front of the chosen character.
+                    random_index = random.sample(positions, 1)
+                    word_ori = self.words[random_index[0]]
+                    synonyms = get_synonyms(word_ori)
 
-                # Randomly retrieve one synonym from all the synonyms
-                word_insert = random.choice(synonyms)
-                if '_' in word_insert:
-                    word_insert = word_insert.replace('_', ' ')
+                    # Randomly retrieve one synonym from all the synonyms
+                    word_insert = random.choice(synonyms)
+                    if '_' in word_insert:
+                        word_insert = word_insert.replace('_', ' ')
 
-                sen_init.append(word_insert)
-                sen_init.append(" ")
+                    sen_init.append(word_insert)
+                    sen_init.append(" ")
 
-            sen_init.append(word)
+                sen_init.append(word)
 
-        # Convert the modified list back to a string.
-        sen_init = ''.join(sen_init)
+            # Convert the modified list back to a string.
+            sen_init = ''.join(sen_init)
 
-        return sen_init
+            return sen_init
 
     def word_swap(self):
         """

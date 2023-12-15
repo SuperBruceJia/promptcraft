@@ -3,7 +3,7 @@
 import re
 from os import path
 from codecs import open
-from setuptools import setup, find_packages
+from setuptools import setup
 
 here = path.abspath(path.dirname(__file__))
 
@@ -51,7 +51,7 @@ setup(
         'word manipulation',
         'sentence paraphrasing'
     ],
-    package_data={"":["*.py"]},
+    package_data={"": ["*.py"]},
     packages=["promptcraft"],
     include_package_data=True,
     install_requires=[

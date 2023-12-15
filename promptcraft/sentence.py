@@ -32,7 +32,7 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-        except:
+        except Exception:
             print("Error in formal")
             return None
 
@@ -48,7 +48,7 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-        except:
+        except Exception:
             print("Error in casual")
             return None
 
@@ -64,7 +64,7 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-        except:
+        except Exception:
             print("Error in passive")
             return None
 
@@ -80,7 +80,7 @@ class SentencePerturb:
         try:
             # Implement the style transformation
             sentence = style.transfer(sentence)
-        except:
+        except Exception:
             print("Error in active")
             return None
 
@@ -107,7 +107,7 @@ class SentencePerturb:
                                                                   padding=True,
                                                                   truncation=True))
             bt_german = tokenizer_en_de.decode(trans_german[0], skip_special_tokens=True)
-        except:
+        except Exception:
             print("Error in back_translation_hugging_face")
             return None
 
@@ -118,7 +118,7 @@ class SentencePerturb:
                                                                    padding=True,
                                                                    truncation=True))
             bt_english = tokenizer_de_en.decode(trans_english[0], skip_special_tokens=True)
-        except:
+        except Exception:
             print("Error in back_translation_hugging_face")
             return None
 
@@ -134,14 +134,14 @@ class SentencePerturb:
         try:
             # Translate the sentence to German
             german = translator.translate(sentence, dest='de').text
-        except:
+        except Exception:
             print("Error in back_translation_google")
             return None
 
         try:
             # Translate the German translation back to English
             back_english = translator.translate(german, dest='en').text
-        except:
+        except Exception:
             print("Error in back_translation_google")
             return None
 
@@ -160,5 +160,5 @@ class SentencePerturb:
             sentence = random.sample(paraphrases, 1)[0][0]
 
             return sentence
-        except:
+        except Exception:
             return None
