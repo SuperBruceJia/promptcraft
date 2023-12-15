@@ -35,7 +35,7 @@ setup(
     keywords='Prompt Perturbation',
     packages=find_packages(exclude=['styleformer', 'sentence', 'parrot', 'character', 'word']),
     install_requires=['torch',
-                      'bitsandbytes'
+                      'bitsandbytes',
                       'transformers',
                       'pandas',
                       'Levenshtein',
