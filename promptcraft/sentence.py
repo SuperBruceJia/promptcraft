@@ -6,8 +6,8 @@ import torch
 from transformers import MarianTokenizer, MarianMTModel
 from googletrans import Translator
 
-import styleformer
-import parrot
+from promptcraft import styleformer
+from promptcraft import parrot
 
 
 class SentencePerturb:
