@@ -43,8 +43,7 @@ pip install promptcraft
 from promptcraft import character
 
 sentence = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
-level = 0.25  # Number of characters that will be edited
-
+level = 0.25  # Percentage of characters that will be edited
 character_tool = character.CharacterPerturb(sentence=sentence, level=level)
 ```
 ## Character Replacement
@@ -76,7 +75,7 @@ char_ocr = character_tool.optical_character_recognition()
 from promptcraft import word
 
 sentence = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
-level = 0.25  # Number of words that will be manipulated
+level = 0.25  # Percentage of words that will be manipulated
 word_tool = word.WordPerturb(sentence=sentence, level=level)
 ```
 ## Synonym Replacement
