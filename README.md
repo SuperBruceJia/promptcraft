@@ -199,6 +199,7 @@ At the root of the project, you will see:
 │   ├── sentence.py
 │   ├── styleformer.py
 │   └── word.py
+├── setup.cfg
 └── setup.py
 ```
 
