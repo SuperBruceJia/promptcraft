@@ -49,5 +49,6 @@ setup(
                       'nltk',
                       'sacremoses',
                       'sentencepiece',
+                      'protobuf'
                       ]
 )
