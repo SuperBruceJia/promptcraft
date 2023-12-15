@@ -107,8 +107,8 @@ word_split = word_tool.word_split()
 ```python
 from promptcraft import sentence
 
-sentence = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
-sentence_tool = sentence.SentencePerturb(sentence=sentence)
+sen = "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May."
+sentence_tool = sentence.SentencePerturb(sentence=sen)
 ```
 ## Back Translation by Hugging Face
 ```python
