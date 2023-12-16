@@ -205,7 +205,7 @@ At the root of the project, you will see:
 ```
 
 # Citation
-If you find our list useful, please consider citing our repo and toolkit in your publications. We provide a BibTeX entry below.
+If you find our toolkit useful, please consider citing our repo and toolkit in your publications. We provide a BibTeX entry below.
 ```bibtex
 @misc{JiaPromptCraft23,
       author = {Jia, Shuyue},
