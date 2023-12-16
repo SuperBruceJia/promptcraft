@@ -31,6 +31,7 @@ A Prompt Perturbation Toolkit for Prompt Robustness Analysis
   - [Active Style](#Active-Style)
 - [Parallel Processing](#Parallel-Processing)
 - [Structure of the Code](#Structure-of-the-Code)
+- [Citation](#Citation)
 - [Acknowledgement](#Acknowledgement)
 
 # Installation
@@ -201,6 +202,28 @@ At the root of the project, you will see:
 │   └── word.py
 ├── setup.cfg
 └── setup.py
+```
+
+# Citation
+If you find our list useful, please consider citing our repo and toolkit in your publications. We provide a BibTeX entry below.
+```bibtex
+@misc{JiaPromptCraft23,
+      author = {Jia, Shuyue},
+      title = {{PromptCraft}: A Prompt Perturbation Toolkit},
+      year = {2023},
+      publisher = {GitHub},
+      journal = {GitHub Repository},
+      howpublished = {\url{https://github.com/SuperBruceJia/promptcraft}},
+}
+
+@misc{JiaAwesomeLLM23,
+      author = {Jia, Shuyue},
+      title = {Awesome-{LLM}-Self-Consistency},
+      year = {2023},
+      publisher = {GitHub},
+      journal = {GitHub Repository},
+      howpublished = {\url{https://github.com/SuperBruceJia/Awesome-LLM-Self-Consistency}},
+}
 ```
 
 # Acknowledgement
