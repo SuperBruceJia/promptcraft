@@ -224,6 +224,15 @@ If you find our list useful, please consider citing our repo and toolkit in your
       journal = {GitHub Repository},
       howpublished = {\url{https://github.com/SuperBruceJia/Awesome-LLM-Self-Consistency}},
 }
+
+@misc{JiaAwesomeSTS23,
+      author = {Jia, Shuyue},
+      title = {Awesome-Semantic-Textual-Similarity},
+      year = {2023},
+      publisher = {GitHub},
+      journal = {GitHub Repository},
+      howpublished = {\url{https://github.com/SuperBruceJia/Awesome-Semantic-Textual-Similarity}},
+}
 ```
 
 # Acknowledgement
