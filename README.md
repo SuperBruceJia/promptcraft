@@ -240,4 +240,4 @@ This work was finished during my 2023 fall semester research rotation
 at the Dependable Computing Laboratory, Department of Electrical and Computer Engineering,
 Boston University, under the supervision of Prof. Wenchao Li.
 
-<a href="https://www.bu.edu/"> <img width="250" src="bu.png"></a>
+<a href="https://www.bu.edu/"> <img width="250" src="https://github.com/SuperBruceJia/promptcraft/blob/main/bu.png"></a>
