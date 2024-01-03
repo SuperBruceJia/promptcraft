@@ -236,8 +236,6 @@ If you find our toolkit useful, please consider citing our repo and toolkit in y
 ```
 
 # Acknowledgement
-This work was finished during my 2023 fall semester research rotation
-at the Dependable Computing Laboratory, Department of Electrical and Computer Engineering,
-Boston University, under the supervision of Prof. Wenchao Li.
+This work was finished during my 2023 fall semester research rotation at the Department of Electrical and Computer Engineering, Boston University.
 
 <a href="https://www.bu.edu/"> <img width="250" src="https://raw.githubusercontent.com/SuperBruceJia/promptcraft/main/bu.png"></a>
